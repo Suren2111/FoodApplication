@@ -1,0 +1,38 @@
+1.What is EMMET?
+
+       -Plugin which converts simple code into larger block of abbreviation.
+
+2.Diff B/W Lib and Framework?
+
+       -Framework-A large full fledged Framework which is necessary to build large scale applications.
+          EG:Angular
+
+       -Lib-A small part of code which is used to import certain functioanality in the existing or new appliactions.
+          EG:React, carousels
+
+3.What is known as CDN, Why do we use it?
+ 
+       -CDN-Content Delievery Network.
+       -It is the intermediate server b/w client and the server.
+       -Which is used to reduce the communication gap and web traffic between the client and te server.
+       
+4.Why is React known as React?
+ 
+       -React is just the JS Files whc FB engineers wrote for us.
+       -It is known as Reacts becsuse it reacts to user when user clicks,submits or performs some actions in UI.
+
+5.What is crossorigin in script tag?
+
+    -crossorigin is the attibute which is sued to share resource from another server or another domain.
+    -It sets the attributeto HTTP crossorigin so that it will be easily get the respctive Content from other servers.
+
+6.What is diference between React and ReactDOM?
+
+    -Both are diff Library.
+    -React is the core lib which contains some basics core functioanlity like create element and so...
+    -ReactDOM is the lib which is sued to manipulate the dom functioanlity. It is used to interactswith browsers.
+        EG-createRoot(which is used to to identify the root element in browers).
+
+
+
+    

@@ -1,0 +1,104 @@
+1.What is `NPM`?
+   
+        -NPM doesn't stands for specific abbreviation, It is the package manager which managaes all our packages 
+        that our project needs, The other package manager is Yarn.
+
+2.What is `Parcel/Webpack`? Why do we need it?
+
+        -Parcel/Webpack/Vite are the bundlers which provide some super powers which makes our application 
+        more performant and faster. Basically these are the Library which has JS files which provides some
+        functioanlity to our application.Webpack is the bundlers which imported in create-react-app internally.
+
+3.What is `.parcel-cache`?
+
+        -Parcel-cache is the foldercontaines multiple files which is generated during our first build.
+        Basically it stores the build files at the initial build and then use the same files for the subsequnt build
+        which takes lesser time for the build than the previous build
+
+4. What is `npx` ?
+
+        -npx is the command used to execute the parcel basically NPM run=npx.
+
+5.What is difference between `dependencies` vs `devDependencies?
+
+        -dependencies =>Basically our application is dependent on some Lib which is known as dependencies, ex-React.
+        -devDependencies =>basically some lib or module which is needed only in development env not in production env 
+          which is known as devDependencies ex-Parcel.
+
+6.- What is Tree Shaking?
+
+         -Parcel or any bundlers provide tree shaking functioanality, which means it will remove the unwanted
+         or deadcode from our application.
+         How can I know that my code contains unwanted code?
+             -If we use any Lib which containes 10 helper functions, out of which our project needed only 2 helper functions
+             the rest 8 are the dead code, the parcel is too smart to remove the unwanter or dead code from our application.
+
+7.What is Hot Module Replacement?
+
+         -HMR is the functioanlity which parcel provide us, whennever we update any files in the applicaton.
+         the HMR behind the scene uses File watcher alogorithm which is coded on C++, which in parallel watch our files
+         for any changes and update the server without any refresh.
+
+
+8.List down your favourite 5 superpowers of Parcel and describe any 3 of them in your
+own words?
+
+        -Minifying => It minifies the files that can be used in production, which makes our application more performant
+
+        -Manages dev and production build => It manages both dev and production build in the dits folder.
+          basically the minified files
+
+        -caching while development => Ot provides the caching while development, which stores our files and will provide
+        less time build for the subsequent build.
+
+        -Older version of Browsers => It supports the older version of browers, i.e provide browser List lib internally
+        which makes our appliaction compatible for any type of browsers
+
+        -Compression => It compress our files, It will rename the variable.
+
+
+9.What is `.gitignore`? What should we add and not add into it?
+
+         -.gitignoresthe File used to ignore certain folder or files in the git.
+
+         -parcel-cache, node modules, package-json, dist are the folder and the file Which we can put in .gitignore.
+
+         -package-lock.json and all the files which we should not put in .gitignore.
+
+
+10.What is the difference between `package.json` and `package-lock.json?
+
+          -Package.json => It is the folder generated while initializing the npm, Basically it contains the
+            configutaion about our application.
+
+          -package-lock.json => It is the folder generated when we are installing any lib or modules, Basivally
+          it locks the version of our lib so that it make sure the same version we are using in both dev and production env.
+
+11.Why should I not modify `package-lock.json`?
+
+           -We should not modify anything in package-lock.json, the reason is it locks the exact version in dev.
+             If we modify anything we probably gets error like my application works in dev and not in production.
+
+           -So we not touch anything in package-lock.json
+
+12.What is `node_modules` ? Is it a good idea to push that on git?
+
+           -node_modules is the folder which contains all ourlib, Basically it is ike the database for
+             our application.
+
+           -It is not the good idea to put the node_modules in the git, Because it is the heaviest thing,
+             which makes our application works very slow and less performant.
+
+           -Anyway it will be regerated in server using package-lock.json
+
+13.What is the `dist` folder?
+
+           -It is the folder which contains both dev and production build.
+
+           -We can put dist folder in .gitignore basically the one which is regenerated can be put in .gitignore.
+
+14.What is `browserlists?
+
+           -It is the internall lib which is imported along with Parcel, Basically it is used to make our application
+           compatible to any version of browsers, probably the older version of browsers.
+
