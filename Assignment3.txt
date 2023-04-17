@@ -1,0 +1,28 @@
+1.What is JSX?
+
+        -JSX doesn't have any specific abbreviation, It is the html like syntax inside JS, not the HTML sysntax inside JS.
+        
+
+2.Superpowers of JSX?
+
+        -JSX makes our way easy of writing HTML like syntax in JS, If we are using React.createElement.
+         Then we may encountered into may lines of code
+        -It is easily readable and syntactical sugar so that we can able to understand easily.
+        - It protects from cross side scripting attack means, No malicious code wil be inserted in JSX.
+
+3.Role of type attribute in script tag, other attribute we can use?
+
+        -Type attribute in script tag means that we are impoting or exporing some package for our js files.
+        means that we are not using files directly, we are using packages.
+
+        -Defer, Async, src are the attributewecan use in script tag.
+
+4.{Titlecomponent} vs {<Titlecomponent />} vs {<Titlecomponent></Titlecomponent>}?
+
+        -{Titlecomponent}=> It is the way of using normal react element in Functional component.
+        -{<Titlecomponent />} vs {<Titlecomponent></Titlecomponent>} => It is the way of using Functional
+        component inside another Functional component, basically this method is known as composing component.
+
+
+
+    
